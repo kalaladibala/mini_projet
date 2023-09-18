@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Objets index{% endblock %}
+
+{% block body %}
+<div class="container">
+<h1 class="pb-4 text-uppercase">La liste des objets</h1>
+    <a class="btn btn-primary btn-sm mb-1 mt-1"href="{{ path('app_objets_new') }}">Ajouter</a>
+    <table class="table table-hover table-bordered" id="data">
+        <thead class="table-secondary">  
+        <thead>
+            <tr>
+                <th width="2">Id</th>
+                <th>Nom</th>
+                <th>Description</th>
+                <th width="350" class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% set i = 0  %}
+        {% for objet in objets %}
+            {% set i = i+1  %}
+            <tr>
+                
+                <td>{{ objet.id }}</td>
+                <td>{{ objet.nom }}</td>
+                <td>{{ objet.description }}</td>
+                <td class="text-center">
+                    <a class="btn btn-success btn-sm" href="{{ path('app_objets_show', {'id': objet.id}) }}">Afficher</a>
+                    <a class="btn btn-info btn-sm text-primary" href="{{ path('app_objets_edit', {'id': objet.id}) }}">Modifier</a>
+                    <a class="btn btn-danger btn-sm" href="{{ path('app_objets_delete', {'id': objet.id}) }}">Delete</a>
+                    <a class="btn btn-primary btn-sm" href="{{ path('app_emprunt_new', {'id': objet.id}) }}">Emprunter</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

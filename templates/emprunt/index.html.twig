@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Objets index{% endblock %}
+
+{% block body %}
+<div class="container">
+<h1 class="pb-4 text-uppercase">La liste des emprunts</h1>
+    <table class="table table-hover table-bordered" >
+        <thead class="table-secondary">  
+        <thead>
+            <tr>
+                <th>Date d'emprunt</th>
+                <th>Date de retour</th>
+                <th>Personne</th>
+                <th>objet</th>
+
+            </tr>
+        </thead>
+        <tbody>
+        {% for emprunt in emprunts %}
+            <tr>
+                
+                <td>{{ emprunt.dateRetour| date('Y-m-d')}}</td>
+                <td>{{ emprunt.dateEmprunt| date('Y-m-d')}}</td>
+                <td>{{ emprunt.personne }}</td>
+                <td>{{ emprunt.objet}}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

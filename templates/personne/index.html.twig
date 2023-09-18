@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Personne index{% endblock %}
+
+{% block body %}
+<div class="container">
+<h1 class="pb-4 text-uppercase">La liste des personnes</h1>
+    <a class="btn btn-primary btn-sm mb-1 mt-1" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ajouter</a>
+    <table class="table table-hover table-striped table-bordered" id="data">
+        <thead class="table-secondary">
+            <tr>
+                <th width="2">N°</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Email</th>
+                <th>Telephone</th>
+                <th width="200" class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% set i = 0  %}
+        {% for personne in personnes %}
+            {% set i = i+1  %}
+            <tr>
+                <td>{{ i }}</td>
+                <td>{{ personne.nom }}</td>
+                <td>{{ personne.prenom }}</td>
+                <td>{{ personne.email }}</td>
+                <td>{{ personne.telephone }}</td>
+                <td class="text-center">
+                    <a class="btn btn-success btn-sm" href="{{ path('app_personne_show', {'id': personne.id}) }}">Show</a>
+                    <a class="btn btn-info btn-sm text-primary" href="{{ path('app_personne_edit', {'id': personne.id}) }}">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="{{ path('app_personne_edit', {'id': personne.id}) }}">Delete</a>
+        </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ajouter une personne</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      {{ form_start(form) }}
+        <div class="modal-body">
+            {{ form_widget(form) }}
+            {#<button class="btn btn-primary">{{ button_label|default('Ajouter') }}</button>#}
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            <button class="btn btn-primary">Ajouter</button>
+        </div>
+      {{ form_end(form) }}
+    </div>
+  </div>
+</div>
+{% endblock %}
