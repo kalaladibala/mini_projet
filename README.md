@@ -1,4 +1,4 @@
-. INSTALLATION DU LOGICIEL
+1. INSTALLATION DU LOGICIEL
 Ce manuel d'installation devrait vous guider de manière plus détaillée et claire à travers le processus d'installation de votre projet. 
 Assurez-vous d'avoir tous les prérequis en place avant de commencer, et suivez les étapes une par une pour garantir une configuration correcte.
 Pour mettre en place notre projet, suivez ces étapes :
@@ -32,6 +32,7 @@ Voici une analyse plus détaillée de cette fonctionnalité réalisée par rappo
  Gestion des Listes (Objets, Personnes et Emprunts)
 La gestion des listes doit permettre aux utilisateurs d’accéder à  la liste des objets disponibles, la liste des personnes ainsi que l'association entre les objets et les personnes (liste des emprunts).
 Cette fonctionnalité est essentielle pour maintenir la base de données du site à jour.
+
 ![image](https://github.com/kalaladibala/mini_projet/assets/97503506/7671313e-9d06-4d50-8b5e-4f0b4e2c1d75)
 ![image](https://github.com/kalaladibala/mini_projet/assets/97503506/5f5a4e68-d15c-4471-a400-e4c34a4ff47c)
 ![image](https://github.com/kalaladibala/mini_projet/assets/97503506/6f36c38e-30aa-4419-8106-1f2c23669634)
@@ -42,6 +43,7 @@ Voici une analyse détaillée de cette fonctionnalité
 Affichage des personnes et des objets :
 Les personnes et les objets sont présentés de manière claire et organisée, offrant une vue d'ensemble complète de toutes les personnes et objets disponibles. 
 Chaque personne est accompagnée d'informations telles que son nom, prénom, email et numéro de téléphone, et chaque objet est accompagné d'informations telles que son nom et sa description.
+
 ![image](https://github.com/kalaladibala/mini_projet/assets/97503506/7aa311c5-d1bc-4e65-b516-e36c34c4df21)
 ![image](https://github.com/kalaladibala/mini_projet/assets/97503506/1c2c6ddb-66a6-4a20-9756-d82a2820055b)
 
@@ -50,21 +52,24 @@ Ajout de personnes et d'objets :
 Les utilisateurs autorisés ont la possibilité d'ajouter de nouvelles personnes et de nouveaux objets à la liste. L'ajout d’une personne implique la saisie d'informations pertinentes, 
 telles que le nom, le prénom, l’email et le numéro de téléphone, et celui d'un objet implique la saisie d'informations sur le nom de l'objet et une description. 
 Cette fonctionnalité garantit que de nouvelles personnes et de nouveaux objets peuvent être facilement intégrés à la base de données.
+
 ![image](https://github.com/kalaladibala/mini_projet/assets/97503506/ff6d9fd1-7b4e-4b1d-a855-d4ea3d8699d6)
 ![image](https://github.com/kalaladibala/mini_projet/assets/97503506/766b8d50-58c3-486f-b370-733184f3f207)
                   
 Modification de personnes et d'objets :
 Les personnes et les objets existants peuvent être modifiés en cas de changements dans leurs informations. Par exemple, si la description d'une personne doit être mise à jour,
 cette fonctionnalité permet aux utilisateurs de le faire. La modification de personnes et d'objets assure que les informations restent à jour et précises, améliorant ainsi la qualité des données sur le site.
+
 ![image](https://github.com/kalaladibala/mini_projet/assets/97503506/a6c3a7fe-c011-4895-a2a1-534275ec8878)
 ![image](https://github.com/kalaladibala/mini_projet/assets/97503506/cb15106d-c293-4101-a961-08a19e3cf1b5)
 
 Suppression de personnes et d'objets :
 Si une personne ou un objet doit être retiré de la liste, les utilisateurs ont la possibilité de le supprimer de la base de données. 
 La suppression de personnes et d'objets maintient la liste propre et pertinente, en évitant la confusion ou l'affichage d'objets qui ne sont plus disponibles.
+
+
 ![image](https://github.com/kalaladibala/mini_projet/assets/97503506/2e8ef08c-1b1f-47a2-bd58-09b917f2f8a6)
 ![image](https://github.com/kalaladibala/mini_projet/assets/97503506/9c540706-fe0d-436c-bfe6-ce0b0fa3da5c)
-
 
          
 Emprunt des objets 
