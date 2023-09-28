@@ -77,6 +77,7 @@ L'une des fonctionnalités cruciales liées à la gestion des objets est la capa
 Cette fonctionnalité permet à un utilisateur de signaler son intention d'emprunter un objet particulier. Lorsqu'un utilisateur souhaite emprunter un objet, 
 il peut sélectionner cet objet depuis la liste des objets disponibles. Après avoir choisi l'objet, l'utilisateur peut soumettre une demande d'emprunt,
 indiquant la période pendant laquelle il souhaite emprunter l'objet et en fournissant éventuellement des informations supplémentaires.
+
 ![image](https://github.com/kalaladibala/mini_projet/assets/97503506/77c43345-4035-44da-b38e-9c0d81700dbb)
 
  
